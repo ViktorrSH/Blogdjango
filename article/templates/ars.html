@@ -1,0 +1,11 @@
+
+
+
+<h4>{% for article in articles %}
+    <h5>{{ article.article_date }}</h5>
+    <h3><a href="index/get/{{ article.id }}/">{{ article.article_title }}</a></h3>
+    <p>{{ article.article_text }}</p>
+    <p>{{ article.article_likes }}</p>
+{% endfor %}
+</h4>
+

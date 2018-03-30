@@ -1,0 +1,7 @@
+{% extends 'main.html' %}
+{% block article %}
+{{ article.article_text }}<hr>
+{% for comment in comments %}
+    <p>{{ comment.comments_text }}</p>
+{% endfor %}
+{% endblock %}

@@ -56,7 +56,9 @@ ROOT_URLCONF = 'djjj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'firsstapp')]
+        'DIRS': [os.path.join(BASE_DIR, 'firsstapp')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -121,3 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# TEMPLATE_DIRS = [
+#     'D:\djjj\templates'
+# ]
