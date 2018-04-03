@@ -127,3 +127,9 @@ STATIC_URL = '/static/'
 # TEMPLATE_DIRS = [
 #     'D:\djjj\templates'
 # ]
+
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    ('static', 'D:/djjj/static'),
+]

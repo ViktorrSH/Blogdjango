@@ -29,4 +29,5 @@ urlpatterns = [
     # url(r'^index/all/', views.ind, name='ind'),
     url('index/get/(?P<article_id>\d+)/$', views.art, name='art'),
     url('^', views.ind, name='ind'),
+    url('in/like/(?P<article_id>\d+)/$', views.like, name='like'),
 ]
